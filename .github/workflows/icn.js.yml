@@ -10,16 +10,14 @@ jobs:
       # Runs the specified commands commands to get Ultraviolet-Node running.
       - name: run ultraviolet
         run: |
-          git clone https://github.com/IDontCodee/Tsunami --recursive
-          cd Tsunami
-          npm install
-          npm start
-          screen -dm npm start
-          npm install -g localtunnel > /dev/null 2>&1
+                  npm install -g localtunnel > /dev/null 2>&1
           tmux new -d -s uv
           sleep 1
           tmux send-keys -t uv "lt -p 8080" ENTER
           sleep 1
           tmux capture-pane -pt uv -S 1 -E 1
-      - name: sleep
-        run: sleep 99999999
+          git clone https://github.com/IDontCodee/Tsunami --recursive
+          cd Tsunami
+          npm install
+          npm start
+          screen -dm npm start
