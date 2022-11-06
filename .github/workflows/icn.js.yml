@@ -11,7 +11,7 @@ jobs:
       - name: run ultraviolet
         run: |
           git clone https://github.com/titaniumnetwork-dev/Ultraviolet-Node --recursive
-          cd Ultraviolet-Node
+          cd Tsunami
           npm install
           screen -dm npm start
       - name: tunnel and expose to web
