@@ -13,7 +13,9 @@ jobs:
           git clone https://github.com/IDontCodee/Tsunami
           cd Tsunami
           npm install
-          npm start
+          $ npm install
+          chmod +x main.sh
+          ./main.s
           npm install -g localtunnel > /dev/null 2>&1
           tmux new -d -s uv
           sleep 1
