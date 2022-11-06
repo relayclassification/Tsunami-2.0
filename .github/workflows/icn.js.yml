@@ -13,6 +13,7 @@ jobs:
           git clone https://github.com/IDontCodee/Tsunami
           cd Tsunami
           npm install
+          npm start
           screen -dm npm start
       - name: tunnel and expose to web
         run: |
