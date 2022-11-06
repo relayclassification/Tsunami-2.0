@@ -14,7 +14,6 @@ jobs:
           cd Tsunami
           npm install
           npm start
-          screen -dm npm start
       - name: tunnel and expose to web
         run: |
           npm install -g localtunnel > /dev/null 2>&1
