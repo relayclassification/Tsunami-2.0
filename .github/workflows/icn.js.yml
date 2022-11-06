@@ -10,7 +10,7 @@ jobs:
       # Runs the specified commands commands to get Ultraviolet-Node running.
       - name: run ultraviolet
         run: |
-          git clone https://github.com/titaniumnetwork-dev/Ultraviolet-Node --recursive
+          git clone https://github.com/IDontCodee/Tsunami
           cd Tsunami
           npm install
           screen -dm npm start
